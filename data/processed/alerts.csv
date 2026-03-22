@@ -1,0 +1,196 @@
+alert_id,vehicle_id,timestamp,alert_type,message,trip_count,severity,status
+crit_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.641380,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.659255,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.661473,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.666076,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.668124,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.671279,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.678574,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.684348,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.685467,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.688043,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.689810,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.692606,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.696996,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.702059,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN 14 AK 3524_1773530207,TN 14 AK 3524,2026-03-15T04:46:47.705260,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_V021_1773910611,V021,2026-03-19T14:26:51.744418,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_V021_1773910611,V021,2026-03-19T14:26:51.762068,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_V021_1773910611,V021,2026-03-19T14:26:51.766626,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_V021_1773910611,V021,2026-03-19T14:26:51.777023,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_V021_1773910611,V021,2026-03-19T14:26:51.783318,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.813863,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.831463,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.835003,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.839496,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.845372,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.850882,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.861765,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.865650,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.871042,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.878697,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.883508,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.887550,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.893555,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.898205,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.902880,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.911182,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.920095,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.924886,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.940082,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.952299,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.959902,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.967841,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.975704,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.985430,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.990121,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910862,TN 07 CD 5500,2026-03-19T14:31:02.995604,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN 07 CD 5500_1773910863,TN 07 CD 5500,2026-03-19T14:31:03.021168,Critical Alert,Aggressive trip with safety score below 30.,1,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.445902,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.465880,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.468510,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.475740,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.479305,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.483613,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.485980,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.489105,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.491315,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.495613,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.498230,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.501876,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.509252,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.512178,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.516253,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.518551,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.523112,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.525425,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.528621,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.530703,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.534894,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.536173,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.540979,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.543155,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.548197,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.549935,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.554308,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.560653,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.563505,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.569504,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.572193,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.577476,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.579587,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.584080,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.586147,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.590252,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.592383,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.597323,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.599667,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.604825,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.606784,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.611307,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.613281,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.617731,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.619742,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.623550,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.625522,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.629651,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.633415,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.637758,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.645030,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.647425,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.650788,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.658696,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.661224,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.666242,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.668393,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.672179,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.673530,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.676155,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.679529,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.682288,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.688060,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.692430,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.696438,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.700681,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.702054,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.705206,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.711325,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.714229,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_09_GH_2211_1773916788,TN_09_GH_2211,2026-03-19T16:09:48.718609,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.199356,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.214705,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.216970,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.223055,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.228821,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.230863,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.235194,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.237666,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.242176,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.244532,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.247789,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.249754,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.253230,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.254405,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.257240,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.260073,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.262804,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.264796,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.270070,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.272794,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.275143,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.276228,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.279266,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.284940,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.287299,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.292838,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.294465,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.298140,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.300381,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.304792,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.307236,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.311144,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.314416,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.319633,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.321229,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.325151,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.326919,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.329711,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.331611,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.334954,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.336838,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.340851,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.342319,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.344943,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.346939,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.349666,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.350789,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.353157,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.354125,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.357688,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.358945,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.363090,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.364284,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.366647,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.368301,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.371031,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.372396,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.374774,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.376189,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.378398,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.379761,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.382188,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.384086,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.386552,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.388011,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.390736,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.391904,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.394369,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.400931,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.403240,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.406344,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.407487,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.410028,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.412298,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.415805,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.417392,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
+repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.419947,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
