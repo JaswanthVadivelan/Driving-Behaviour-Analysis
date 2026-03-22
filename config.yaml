@@ -1,0 +1,13 @@
+# Project configuration settings.
+model_path: models/svm_model.pkl
+data_path: data/trips.csv
+features_path: data/trips_features.csv
+history_path: data/trip_history.csv
+alerts_path: data/alerts.csv
+reports_path: reports/
+risk_thresholds:
+  low: 0.3
+  medium: 0.6
+  high: 0.8
+n_clusters: 4
+alert_consecutive_trips: 3
