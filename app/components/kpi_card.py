@@ -14,9 +14,5 @@ def render_kpi_card(label, value, sub, delta, delta_cls, color, icon="", delay=0
         <span class="kpi-delta {delta_cls}">{delta}</span>
       </div>
     </div>
-    <style>
-      /* Quick CSS transition added in dbas_theme.py but ensuring it renders smooth */
-      .kpi {{ transition: transform 0.3s ease, box-shadow 0.3s ease; }}
-      .kpi:hover {{ transform: translateY(-4px); box-shadow: var(--shadow-lg); }}
-    </style>
+    </div>
     """, unsafe_allow_html=True)

@@ -184,6 +184,8 @@ class ReportGenerator:
                 ax.set_xlabel("Vehicle ID")
                 ax.set_ylabel("Avg Safety Score")
                 ax.set_title("Fleet Vehicle Scorer")
+                plt.xticks(rotation=45, ha="right")
+                fig.tight_layout()
                 temp_img = os.path.join(self.cfg.REPORTS_PATH, f"fleet_chart_{ts}_temp.png")
                 fig.savefig(temp_img, dpi=150, bbox_inches="tight")
                 plt.close(fig)
@@ -211,21 +213,23 @@ class ReportGenerator:
             return str(val)
 
         if "risk_trend" in df.columns:
-            def _format_trend(x):
-                s = str(x)
-                if len(s) > 60:
-                    s = s[:57] + "..."
-                return s
-            df["risk_trend"] = df["risk_trend"].apply(_format_trend)
+            df = df.drop(columns=["risk_trend"])
+
+        # Also drop model or metadata columns if they exist to keep the report clean
+        cols_to_drop = [c for c in df.columns if c.startswith("model")]
+        if cols_to_drop:
+            df = df.drop(columns=cols_to_drop)
+
+        # Reset index if vehicle_id is in index 
+        if df.index.name == "vehicle_id":
+            df = df.reset_index()
 
         df = df.map(_fmt)
 
         table_data = [df.columns.tolist()] + df.values.tolist()
 
-        # Column widths (fit to letter width ~ 540 pts usable).
-        col_widths = [60, 70, 90, 170, 55, 55, 40]
-        if len(table_data[0]) != len(col_widths):
-            col_widths = None
+        # Let ReportLab dynamically calculate widths to prevent overflow cutoffs
+        col_widths = None
 
         table = Table(table_data, colWidths=col_widths, repeatRows=1)
         table.setStyle(TableStyle([

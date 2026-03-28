@@ -1,64 +1,11 @@
-# src/dbas_theme.py
-# Professional white/light conference theme for DBAS.
+import re
+import os
 
-import streamlit as st
-from datetime import datetime
-from streamlit_option_menu import option_menu
+theme_file = r'd:\Project_Dhanush\Project1\app\config\theme.py'
+with open(theme_file, 'r', encoding='utf-8') as f:
+    content = f.read()
 
-# ── Navigation constants ──────────────────────────────────────────────────────────
-NAV_OPTIONS  = ["Dashboard", "Live Scoring", "Driver Leaderboard", "Model Performance", "Vehicle Profile", "Alerts", "Reports"]
-NAV_ICONS    = ["grid", "speedometer2", "trophy", "graph-up", "person-badge", "exclamation-triangle", "file-earmark-bar-graph"]
-NAV_PAGE_MAP = {
-    "Dashboard":          "main.py",
-    "Live Scoring":       "pages/01_live_scoring.py",    "Driver Leaderboard": "pages/08_driver_leaderboard.py",    "Model Performance":  "pages/11_model_performance.py",    "Vehicle Profile":    "pages/06_vehicle_profile.py",
-    "Alerts":             "pages/04_alerts.py",
-    "Reports":            "pages/05_reports.py",}
-
-# ── Shared Plotly layout ──────────────────────────────────────────────────────────
-PLOTLY_BASE = dict(
-    paper_bgcolor="rgba(0,0,0,0)",
-    plot_bgcolor="rgba(0,0,0,0)",
-    font=dict(family="'DM Sans', sans-serif", color="#64748b", size=11),
-    legend=dict(
-        bgcolor="rgba(255,255,255,0.9)",
-        bordercolor="#e2e8f0",
-        borderwidth=1,
-        font=dict(size=11),
-    ),
-)
-
-AXIS = dict(
-    gridcolor="rgba(100,116,139,0.1)",
-    zerolinecolor="rgba(100,116,139,0.15)",
-    tickfont=dict(family="'DM Sans', sans-serif", size=11, color="#94a3b8"),
-    linecolor="#e2e8f0",
-)
-
-def get_plotly_layout():
-    theme = st.session_state.get('theme', 'Light')
-    return dict(
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(family="'DM Sans', sans-serif", color="#64748b" if theme=="Light" else "#9ca3af", size=11),
-        legend=dict(
-            bgcolor="rgba(255,255,255,0.9)" if theme=="Light" else "rgba(17,24,39,0.9)",
-            bordercolor="#e2e8f0" if theme=="Light" else "#1f2937",
-            borderwidth=1,
-            font=dict(size=11),
-        ),
-    )
-
-def get_axis_layout():
-    theme = st.session_state.get('theme', 'Light')
-    return dict(
-        gridcolor="rgba(100,116,139,0.1)" if theme=="Light" else "rgba(255,255,255,0.05)",
-        zerolinecolor="rgba(100,116,139,0.15)" if theme=="Light" else "rgba(255,255,255,0.1)",
-        tickfont=dict(family="'DM Sans', sans-serif", size=11, color="#94a3b8" if theme=="Light" else "#9ca3af"),
-        linecolor="#e2e8f0" if theme=="Light" else "#1f2937",
-    )
-
-# ── Global CSS ────────────────────────────────────────────────────────────────────
-GLOBAL_CSS = """
+new_global_css = '''GLOBAL_CSS = """
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
 
@@ -485,35 +432,9 @@ p { font-family: var(--font-b) !important; color: var(--text-2) !important; font
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 </style>
-"""
+"""'''
 
-NAV_STYLES = {
-    "container": {
-        "padding": "8px 0",
-        "background-color": "#ffffff",
-        "border-bottom": "1px solid #e2e8f0",
-        "box-shadow": "0 1px 3px rgba(15,23,42,0.05)",
-    },
-    "icon": {"font-size": "13px", "color": "#64748b"},
-    "nav-link": {
-        "font-size": "13px",
-        "font-family": "'DM Sans', sans-serif",
-        "font-weight": "500",
-        "padding": "7px 16px",
-        "border-radius": "8px",
-        "color": "#64748b",
-        "margin": "0 3px",
-    },
-    "nav-link-selected": {
-        "background-color": "#1a56db",
-        "color": "#ffffff",
-        "font-weight": "600",
-        "box-shadow": "0 2px 8px rgba(26,86,219,0.3)",
-    },
-}
-
-
-DARK_MODE_OVERRIDES = """
+new_dark_mode = '''DARK_MODE_OVERRIDES = """
 <style>
 :root {
   --bg:          #050814;
@@ -571,121 +492,12 @@ DARK_MODE_OVERRIDES = """
   color: var(--text) !important;
 }
 </style>
-"""
+"""'''
 
-def apply_theme():
-    st.markdown(GLOBAL_CSS, unsafe_allow_html=True)
-    if st.session_state.get('theme', 'Light') == 'Dark':
-        st.markdown(DARK_MODE_OVERRIDES, unsafe_allow_html=True)
+content_new = re.sub(r'GLOBAL_CSS = """(?:(?!""").|[\r\n])*"""', new_global_css, content, flags=re.DOTALL)
+content_new = re.sub(r'DARK_MODE_OVERRIDES = """(?:(?!""").|[\r\n])*"""', new_dark_mode, content_new, flags=re.DOTALL)
 
+with open(theme_file, 'w', encoding='utf-8') as f:
+    f.write(content_new)
 
-def render_topbar():
-    now_str = datetime.now().strftime("%H:%M:%S  ·  %d %b %Y")
-    st.markdown(f"""
-    <div class="dbas-topbar">
-      <div class="dbas-brand">
-        <div class="dbas-logo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-            <path d="M2 17l10 5 10-5"/>
-            <path d="M2 12l10 5 10-5"/>
-          </svg>
-        </div>
-        <div>
-          <div class="dbas-brand-name">DBAS</div>
-          <div class="dbas-brand-sub">Driving Behaviour Analysis</div>
-        </div>
-      </div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div class="dbas-time">{now_str}</div>
-      </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-
-def render_nav(current_page: str):
-    selected = option_menu(
-        menu_title=None,
-        options=NAV_OPTIONS,
-        icons=NAV_ICONS,
-        orientation="horizontal",
-        default_index=NAV_OPTIONS.index(current_page),
-        styles=NAV_STYLES,
-    )
-    if selected != current_page:
-        st.switch_page(NAV_PAGE_MAP[selected])
-    return selected
-
-
-def render_page_header(title: str, subtitle: str, badge: str = ""):
-    badge_html = f'<span class="dbas-badge">{badge}</span>' if badge else ""
-    c1, c2 = st.columns([0.9, 0.1])
-    with c1:
-        st.markdown(f"""
-        <div class="dbas-page-header" style="border-bottom:none; margin-bottom:5px;">
-          <div>
-            <div class="dbas-page-title">{title}</div>
-            <div class="dbas-page-sub">{subtitle}</div>
-          </div>
-          {badge_html}
-        </div>
-        """, unsafe_allow_html=True)
-    with c2:
-        theme = st.session_state.get('theme', 'Light')
-        btn_label = "☀️ Mode" if theme == "Dark" else "🌙 Mode"
-        if st.button(btn_label, key=f"theme_toggle_{title}"):
-            st.session_state.theme = "Light" if theme == "Dark" else "Dark"
-            st.rerun()
-    st.markdown("<hr style='margin-top:0; margin-bottom: 28px;' />", unsafe_allow_html=True)
-
-
-def section(label: str):
-    st.markdown(f'<div class="dbas-section">{label}</div>', unsafe_allow_html=True)
-
-
-def kpi_card(label, value, sub, delta, delta_cls, color, icon="", delay=0):
-    st.markdown(f"""
-    <div class="kpi {color}" style="animation-delay:{delay}s">
-      <div class="kpi-icon">{icon}</div>
-      <div class="kpi-label">{label}</div>
-      <div class="kpi-val">{value}</div>
-      <div class="kpi-footer">
-        <span class="kpi-sub">{sub}</span>
-        <span class="kpi-delta {delta_cls}">{delta}</span>
-      </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-
-def stat_chips(stats: list):
-    chips = "".join(
-        f'<div class="stat-chip">{lbl}<span>{val}</span></div>'
-        for lbl, val in stats
-    )
-    st.markdown(f'<div class="stat-row">{chips}</div>', unsafe_allow_html=True)
-
-
-def page_footer():
-    now_str = datetime.now().strftime("%H:%M:%S  Â·  %d %b %Y")
-    c1, c2 = st.columns([0.8, 0.2])
-    with c1:
-        st.markdown(f"""
-        <div style="border-top:2px solid var(--border);
-                    padding:20px 0 0; margin-top:40px;">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;
-                      color:var(--dim);letter-spacing:0.06em;">
-            DBAS v1.0 &nbsp;Â·&nbsp; DTW + SVM Classification Engine &nbsp;Â·&nbsp;
-            Developed for Fleet Safety Intelligence
-          </div>
-          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;
-                      color:var(--dim);letter-spacing:0.04em; margin-top:6px;">
-            Last sync: {now_str}
-          </div>
-        </div>
-        """, unsafe_allow_html=True)
-    with c2:
-        st.markdown("<div style='height:22px'></div>", unsafe_allow_html=True)
-        if st.button("Tutorial", key="footer_tutorial"):
-            st.switch_page("pages/12_tutorial.py")
-
-
+print("UI Theme successfully updated with Ultra Premium aesthetics.")
