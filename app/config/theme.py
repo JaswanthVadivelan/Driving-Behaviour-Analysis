@@ -10,9 +10,13 @@ NAV_OPTIONS  = ["Dashboard", "Live Scoring", "Driver Leaderboard", "Model Perfor
 NAV_ICONS    = ["grid", "speedometer2", "trophy", "graph-up", "person-badge", "exclamation-triangle", "file-earmark-bar-graph"]
 NAV_PAGE_MAP = {
     "Dashboard":          "main.py",
-    "Live Scoring":       "pages/01_live_scoring.py",    "Driver Leaderboard": "pages/08_driver_leaderboard.py",    "Model Performance":  "pages/11_model_performance.py",    "Vehicle Profile":    "pages/06_vehicle_profile.py",
-    "Alerts":             "pages/04_alerts.py",
-    "Reports":            "pages/05_reports.py",}
+    "Live Scoring":       "pages/01_live_scoring.py",
+    "Driver Leaderboard": "pages/05_driver_leaderboard.py",
+    "Model Performance":  "pages/06_model_performance.py",
+    "Vehicle Profile":    "pages/04_vehicle_profile.py",
+    "Alerts":             "pages/02_alerts.py",
+    "Reports":            "pages/03_reports.py",
+}
 
 # ── Shared Plotly layout ──────────────────────────────────────────────────────────
 PLOTLY_BASE = dict(
@@ -686,6 +690,6 @@ def page_footer():
     with c2:
         st.markdown("<div style='height:22px'></div>", unsafe_allow_html=True)
         if st.button("Tutorial", key="footer_tutorial"):
-            st.switch_page("pages/12_tutorial.py")
+            st.switch_page("pages/07_tutorial.py")
 
 
