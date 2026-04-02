@@ -1,4 +1,4 @@
-import bootstrap
+﻿import bootstrap
 # pages/1_Live_Scoring.py
 
 import os
@@ -15,14 +15,14 @@ from app.config.theme import (
     PLOTLY_BASE, AXIS,
 )
 
-st.set_page_config(page_title="Live Scoring — DBAS", layout="wide", page_icon="🛡️", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Live Scoring ? DBAS", layout="wide", page_icon="???", initial_sidebar_state="collapsed")
 apply_theme()
 render_topbar()
 render_nav("Live Scoring")
 render_page_header(
     "Live Trip Scorer",
     "Upload a speed-profile CSV and get instant aggressive-driving classification",
-    badge="DTW · SVM",
+    badge="DTW ? SVM",
 )
 
 section("Trip Input")
@@ -42,13 +42,13 @@ with col_ds:
 
 col_up, col_save = st.columns([3, 1], gap="small")
 with col_up:
-    uploaded_file = st.file_uploader("Upload CSV — speed_t0 to speed_t49", type=["csv"])
+    uploaded_file = st.file_uploader("Upload CSV ? speed_t0 to speed_t49", type=["csv"])
 with col_save:
     st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
     save_upload = st.checkbox("Save to datasets folder")
 
 st.markdown("<div style='height:6px'></div>", unsafe_allow_html=True)
-run_scoring = st.button("▶  Score Trips", type="primary")
+run_scoring = st.button("?  Score Trips", type="primary")
 
 if run_scoring:
     if not vehicle_id:
@@ -70,7 +70,7 @@ if run_scoring:
         if missing_cols:
             st.error(f"Missing required columns: {missing_cols}")
         else:
-            with st.spinner("Analysing driving behaviour…"):
+            with st.spinner("Analysing driving behaviour?"):
                 scorer    = TripScorer()
                 scored_df = scorer.score_dataframe(input_df)
                 if "trip_id" not in scored_df.columns:
@@ -85,27 +85,27 @@ if run_scoring:
             k1, k2, k3, k4 = st.columns(4, gap="small")
             with k1:
                 st.markdown(f"""
-                <div class="kpi blue"><div class="kpi-icon">🚗</div>
+                <div class="kpi blue"><div class="kpi-icon">??</div>
                 <div class="kpi-label">Total Trips</div><div class="kpi-val">{n_total}</div>
                 <div class="kpi-footer"><span class="kpi-sub">Scored this session</span></div></div>
                 """, unsafe_allow_html=True)
             with k2:
                 st.markdown(f"""
-                <div class="kpi green"><div class="kpi-icon">✅</div>
+                <div class="kpi green"><div class="kpi-icon">?</div>
                 <div class="kpi-label">Calm Trips</div><div class="kpi-val">{n_calm}</div>
                 <div class="kpi-footer"><span class="kpi-sub">Safe behaviour</span></div></div>
                 """, unsafe_allow_html=True)
             with k3:
                 agg_cls = "red" if n_agg > 0 else "green"
                 st.markdown(f"""
-                <div class="kpi {agg_cls}"><div class="kpi-icon">⚠️</div>
+                <div class="kpi {agg_cls}"><div class="kpi-icon">??</div>
                 <div class="kpi-label">Aggressive Trips</div><div class="kpi-val">{n_agg}</div>
                 <div class="kpi-footer"><span class="kpi-sub">Risky behaviour</span></div></div>
                 """, unsafe_allow_html=True)
             with k4:
                 sc_cls = "green" if avg_sc >= 70 else ("amber" if avg_sc >= 40 else "red")
                 st.markdown(f"""
-                <div class="kpi {sc_cls}"><div class="kpi-icon">📊</div>
+                <div class="kpi {sc_cls}"><div class="kpi-icon">??</div>
                 <div class="kpi-label">Avg Safety Score</div><div class="kpi-val">{avg_sc:.1f}</div>
                 <div class="kpi-footer"><span class="kpi-sub">This batch</span></div></div>
                 """, unsafe_allow_html=True)
@@ -145,7 +145,7 @@ if run_scoring:
                         colors=["#059669" if l == "calm" else "#dc2626" for l in counts["label"]],
                         line=dict(color="#ffffff", width=3),
                     ),
-                    hovertemplate="<b>%{label}</b><br>%{value} trips — %{percent}<extra></extra>",
+                    hovertemplate="<b>%{label}</b><br>%{value} trips ? %{percent}<extra></extra>",
                 ))
                 fig_pie.update_layout(
                     **PLOTLY_BASE, height=260,
@@ -167,29 +167,28 @@ if run_scoring:
             )
 
             history = HistoryManager()
+            alert_engine = AlertEngine()
+
+            # CHANGED: run batch-aware checks before saving the new trips.
+            alerts = alert_engine.generate_batch_alerts(scored_df, vehicle_id)
+
+            # CHANGED: persist trips only after checks are complete.
             history.save_trips(scored_df, vehicle_id)
 
-            alert_engine = AlertEngine()
-            alerts = []
-            for _, row in scored_df.iterrows():
-                alerts.extend(alert_engine.check_trip(vehicle_id, row["label"], row["safety_score"]))
+            # CHANGED: persist alerts once per batch (deduplicated).
+            if alerts:
+                alert_engine.save_alerts(alerts)
 
             if alerts:
                 section("Triggered Alerts")
                 for alert in alerts:
-                    st.warning(f"**{alert['alert_type']}** — {alert['message']}")
+                    st.warning(f"**{alert['alert_type']}** ? {alert['message']}")
 
             section("Export")
             csv_bytes = scored_df.to_csv(index=False).encode("utf-8")
-            st.download_button("⬇  Download Scored CSV", data=csv_bytes,
+            st.download_button("?  Download Scored CSV", data=csv_bytes,
                                file_name="scored_trips.csv", mime="text/csv")
 
 page_footer()
-
-
-
-
-
-
 
 

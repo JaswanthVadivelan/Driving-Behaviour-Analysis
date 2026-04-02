@@ -41,6 +41,20 @@ class AlertEngine:
             # Write the empty CSV to disk.
             empty_df.to_csv(self.alerts_path, index=False)
 
+    # Append a list of alerts to the alerts CSV (shared helper).
+    def _append_alerts(self, alerts):
+        if not alerts:
+            return
+        alerts_df = pd.DataFrame(alerts)
+        # Ensure all required columns exist.
+        for col in self.columns:
+            if col not in alerts_df.columns:
+                alerts_df[col] = pd.NA
+        # Reorder columns to match the schema.
+        alerts_df = alerts_df[self.columns]
+        # Append to CSV without header.
+        alerts_df.to_csv(self.alerts_path, mode="a", header=False, index=False)
+
     # Check a trip result and create alerts if needed.
     def check_trip(self, vehicle_id, label, safety_score):
         # Prepare a list to collect new alerts.
@@ -96,18 +110,66 @@ class AlertEngine:
                 new_alerts.append(alert)
         # Append any new alerts to the alerts CSV.
         if new_alerts:
-            # Convert alerts to a DataFrame.
-            alerts_df = pd.DataFrame(new_alerts)
-            # Ensure all required columns exist.
-            for col in self.columns:
-                if col not in alerts_df.columns:
-                    alerts_df[col] = pd.NA
-            # Reorder columns to match the schema.
-            alerts_df = alerts_df[self.columns]
-            # Append to CSV without header.
-            alerts_df.to_csv(self.alerts_path, mode="a", header=False, index=False)
+            self._append_alerts(new_alerts)
         # Return the list of generated alerts.
         return new_alerts
+
+    # Batch-aware alert generation (no writes) using prior history only.
+    def generate_batch_alerts(self, scored_df, vehicle_id):
+        """Generate alerts for a scored batch without persisting them.
+
+        CHANGED: This method evaluates repeat-offender logic against prior history
+        only and deduplicates alerts to one per vehicle per condition per batch.
+        """
+        new_alerts = []
+        if scored_df is None or scored_df.empty:
+            return new_alerts
+
+        # CHANGED: Critical alert check is done once per batch.
+        if "label" in scored_df.columns and "safety_score" in scored_df.columns:
+            crit_mask = (scored_df["label"] == "aggressive") & (scored_df["safety_score"] < 30)
+            if crit_mask.any():
+                new_alerts.append({
+                    "alert_id": f"crit_{vehicle_id}_{int(datetime.utcnow().timestamp())}",
+                    "vehicle_id": vehicle_id,
+                    "timestamp": datetime.utcnow().isoformat(),
+                    "alert_type": "Critical Alert",
+                    "message": "Aggressive trip with safety score below 30.",
+                    "trip_count": int(crit_mask.sum()),
+                    "severity": "High",
+                    "status": "Active"
+                })
+
+        # CHANGED: Repeat-offender uses prior history only (batch not included).
+        history_df = pd.DataFrame()
+        if os.path.exists(self.cfg.HISTORY_PATH):
+            history_df = pd.read_csv(self.cfg.HISTORY_PATH)
+        if not history_df.empty:
+            history_df = history_df[history_df["vehicle_id"] == vehicle_id]
+
+        n = self.cfg.ALERT_CONSECUTIVE_TRIPS
+        if not history_df.empty and len(history_df) >= n:
+            history_df["timestamp"] = pd.to_datetime(history_df["timestamp"], errors="coerce")
+            history_df = history_df.sort_values("timestamp", ascending=False)
+            recent = history_df.head(n)
+            if (recent["label"] == "aggressive").all():
+                new_alerts.append({
+                    "alert_id": f"repeat_{vehicle_id}_{int(datetime.utcnow().timestamp())}",
+                    "vehicle_id": vehicle_id,
+                    "timestamp": datetime.utcnow().isoformat(),
+                    "alert_type": "Repeat Offender Alert",
+                    "message": f"Last {n} trips were aggressive.",
+                    "trip_count": int(n),
+                    "severity": "Medium",
+                    "status": "Active"
+                })
+
+        return new_alerts
+
+    # Persist a list of alerts (used by the batch flow).
+    def save_alerts(self, alerts):
+        """CHANGED: Persist alerts after batch checks complete."""
+        self._append_alerts(alerts)
 
     # Get alerts from the last 24 hours.
     def get_active_alerts(self, vehicle_id=None):

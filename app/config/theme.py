@@ -584,7 +584,7 @@ def apply_theme():
 
 
 def render_topbar():
-    now_str = datetime.now().strftime("%H:%M:%S  ·  %d %b %Y")
+    now_str = datetime.now().strftime("%H:%M:%S  ?  %d %b %Y")
     st.markdown(f"""
     <div class="dbas-topbar">
       <div class="dbas-brand">
@@ -670,7 +670,7 @@ def stat_chips(stats: list):
 
 
 def page_footer():
-    now_str = datetime.now().strftime("%H:%M:%S  Â·  %d %b %Y")
+    now_str = datetime.now().strftime("%H:%M:%S  ?  %d %b %Y")
     c1, c2 = st.columns([0.8, 0.2])
     with c1:
         st.markdown(f"""
@@ -678,7 +678,7 @@ def page_footer():
                     padding:20px 0 0; margin-top:40px;">
           <div style="font-family:'JetBrains Mono',monospace;font-size:10px;
                       color:var(--dim);letter-spacing:0.06em;">
-            DBAS v1.0 &nbsp;Â·&nbsp; DTW + SVM Classification Engine &nbsp;Â·&nbsp;
+            DBAS v1.0 &nbsp;?&nbsp; DTW + SVM Classification Engine &nbsp;?&nbsp;
             Developed for Fleet Safety Intelligence
           </div>
           <div style="font-family:'JetBrains Mono',monospace;font-size:10px;
@@ -689,7 +689,5 @@ def page_footer():
         """, unsafe_allow_html=True)
     with c2:
         st.markdown("<div style='height:22px'></div>", unsafe_allow_html=True)
-        if st.button("Tutorial", key="footer_tutorial"):
-            st.switch_page("pages/07_tutorial.py")
 
 

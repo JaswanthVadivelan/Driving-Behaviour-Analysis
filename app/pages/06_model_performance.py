@@ -126,7 +126,7 @@ with k3:
 with k4:
     st.metric("Recall", f"{recall:.3f}")
 with k5:
-    st.metric("Cross-val F1", f"{cv_mean:.3f} � {cv_std:.3f}")
+    st.metric("Cross-val F1", f"{cv_mean:.3f} ? {cv_std:.3f}")
 
 st.divider()
 section_header("Confusion matrix and feature importance")
@@ -182,7 +182,7 @@ st.divider()
 section_header("Model comparison")
 
 models_to_compare = {
-    "SVM � RBF (current)": SVC(kernel="rbf", probability=True, random_state=42),
+    "SVM ? RBF (current)": SVC(kernel="rbf", probability=True, random_state=42),
     "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
     "Gradient Boosting": GradientBoostingClassifier(random_state=42),
     "Naive Bayes": GaussianNB(),
@@ -237,7 +237,7 @@ try:
         color="label",
         color_discrete_map={"calm": "#1D9E75", "aggressive": "#D85A30"},
         opacity=0.7,
-        title="DTW feature space � calm vs aggressive trips",
+        title="DTW feature space ? calm vs aggressive trips",
         labels={
             "dtw_calm": "DTW distance to calm template",
             "dtw_aggressive": "DTW distance to aggressive template",
@@ -272,7 +272,7 @@ if os.path.exists(history_path):
             color_discrete_map={"calm": "#1D9E75", "aggressive": "#D85A30"},
             title="Safety score distribution across all scored trips",
             labels={
-                "safety_score": "Safety score (0�100)",
+                "safety_score": "Safety score (0?100)",
                 "count": "Number of trips",
             },
         )
@@ -323,8 +323,8 @@ try:
         )
     )
     fig_speed.update_layout(
-        title="Speed profile � calm vs aggressive template comparison",
-        xaxis_title="Time step (0�49)",
+        title="Speed profile ? calm vs aggressive template comparison",
+        xaxis_title="Time step (0?49)",
         yaxis_title="Speed (km/h)",
         margin=dict(l=10, r=10, t=40, b=10),
     )
@@ -395,6 +395,10 @@ else:
     st.info("Cross-validation results unavailable.")
 
 page_footer()
+
+
+
+
 
 
 

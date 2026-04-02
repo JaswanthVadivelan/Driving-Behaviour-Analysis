@@ -49,13 +49,13 @@ project_root/
 Each page is a separate feature of the product:
 
 - `01_live_scoring.py` — Upload or select CSV and score trips
-- `04_alerts.py` — View and manage alerts
-- `05_reports.py` — Generate PDF reports
-- `06_vehicle_profile.py` — Vehicle profiling analytics
+- `02_alerts.py` — View and manage alerts
+- `03_reports.py` — Generate PDF reports
+- `04_vehicle_profile.py` — Vehicle profiling analytics
 - `07_fleet_map.py` — Map view
-- `08_driver_leaderboard.py` — Driver ranking
+- `05_driver_leaderboard.py` — Driver ranking
 - `09_risk_heatmap.py` — Risk heatmap
-- `11_model_performance.py` — Model comparison and metrics
+- `06_model_performance.py` — Model comparison and metrics
 
 ### app/components/
 Reusable UI widgets:
