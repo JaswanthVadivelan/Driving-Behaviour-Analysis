@@ -329,9 +329,7 @@ div[data-testid="stSidebarNav"]   { display: none !important; }
   margin-bottom: 16px; background: var(--surface2);
 }
 
-[data-testid="stTextInput"] input,
-[data-testid="stSelectbox"] > div > div,
-[data-testid="stMultiSelect"] > div > div {
+[data-testid="stTextInput"] input {
   background: var(--surface) !important;
   backdrop-filter: var(--glass-blur) !important;
   border: var(--glass-border) !important;

@@ -194,3 +194,5 @@ crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.412298,Critical 
 repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.415805,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
 crit_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.417392,Critical Alert,Aggressive trip with safety score below 30.,1,High,Active
 repeat_TN_14_AK_3524_1774129620,TN_14_AK_3524,2026-03-22T03:17:00.419947,Repeat Offender Alert,Last 3 trips were aggressive.,3,Medium,Active
+crit_TN_07_CD_5500_1776332781,TN_07_CD_5500,2026-04-16T15:16:21.324299,Critical Alert,Aggressive trip with safety score below 30.,27,High,Active
+crit_v002_1776334594,v002,2026-04-16T15:46:34.705139,Critical Alert,Aggressive trip with safety score below 30.,5,High,Active
